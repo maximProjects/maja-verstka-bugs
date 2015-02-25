@@ -1,0 +1,54 @@
+2015/02/25 13:59:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/about
+---
+2015/02/25 14:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "abaut".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('abaut')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('abaut')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/abaut')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/abaut
+---
+2015/02/25 14:00:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/about
+---
+2015/02/25 14:01:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('about')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('about')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/about
+---
+2015/02/25 14:06:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('index')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/site/page
+---
