@@ -42,8 +42,20 @@ function renderInfo()
 
 function renderMap()
 {
-    var url = '/ajax/Map';
-    $(".load-content").load(url);
+    var link = '/ajax/Map';
+    /*
+    $(".load-content").load(url,);
+   initialize();
+   */
+     $.ajax({type: "post",url:link}).done(function(data){
+       
+            obj = jQuery.parseJSON(data);
+            console.log(obj);
+            $('.load-content').html(obj.html);
+          //  alert(1);
+            initialize(); 
+        
+     });
 }
 
 function renderCart()

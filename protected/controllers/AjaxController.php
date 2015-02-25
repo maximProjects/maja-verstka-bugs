@@ -20,7 +20,12 @@ class AjaxController extends Controller
 	{
         if(Yii::app()->request->isAjaxRequest)
         {
-            $this->renderPartial('_map');
+            
+            $html = $this->renderPartial('_map',array(),true);
+            $json = array();
+            $json['html'] = $html;
+            echo json_encode($json);
+
             Yii::app()->end();
         }
         else

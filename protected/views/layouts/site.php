@@ -76,7 +76,13 @@
                     </div><!--/ item-content -->
                 </div><!---/item -->
                 <div class="item-bottom load-content">
-                
+                    <?php
+                    /*
+                    <a href="#" class="button" data-latLng="53.488188,-2.373019">Button</a>
+                    <a href="#" class="button" data-latLng="-34.397, 150.644">Button 2</a>
+                    <div id="map-canvas" style="width:100%;height:200px;"></div>
+                    */
+                    ?>
                 </div><!--/item-item bottom -->
             </div><!--/item-wrapper -->
         </section>
@@ -86,5 +92,29 @@
     </div><!--/row -->
 </div><!--/container-fluid -->
 </body>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/maps.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/actions.js"></script>
+<script>
+/*
+jQuery(document).ready(function() {
+    jQuery(document).on("click", ".button", function(e) {
+        //e.preventDefault();
+        initialize();
+        //var latLng = jQuery(this).attr("data-latLng");          
+        //initialize(latLng);
+    });
+
+    function initialize(latLng) {
+        latLng = latLng.split(",")
+        var mapOptions = {
+            center: new google.maps.LatLng(latLng[0],latLng[1]),
+            zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    }
+   
+}); 
+*/
+</script>
 </html>
