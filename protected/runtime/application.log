@@ -52,3 +52,1310 @@ Stack trace:
 #9 {main}
 REQUEST_URI=/index.php/site/page
 ---
+2015/02/25 16:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/css/bootstrap.css
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/css/style.css
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/bootst...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/css/bootstrap.css
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "css".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('css')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('css')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/css/style....')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/css/style.css
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:09:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:10:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:10:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/item_headr_bg.png".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('images/item_hea...')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/item_headr_bg.png
+HTTP_REFERER=http://booking-verstka.local/css/style.css
+---
+2015/02/25 16:20:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/log...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/logo.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:20:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:21:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/sal...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/salon_bg.jpg
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:30:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:30:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:30:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/faf...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/faforite.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:30:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('images')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('images')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/images/set...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/images/settings.png
+HTTP_REFERER=http://booking-verstka.local/site/index
+---
+2015/02/25 16:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ajax
+---
+2015/02/25 16:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ajax
+---
+2015/02/25 17:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ajax
+---
