@@ -18,7 +18,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css">
-
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style_advanced.css">
 	</head>
 <!--
 <head>
@@ -75,7 +75,7 @@
                         
                         <ul class="item-menu clearfix">
                             <li class="info"><a href="#"><img src="images/info-btn.png"  width="10" height="24"/></a></li>
-                            <li class="map"><a href="#" data-id="1"><img src="images/map-btn.png" width="17" height="22" ></a></li>
+                            <li class="map"><a href="#" data-id="2"><img src="images/map-btn.png" width="17" height="22" ></a></li>
                             <li class="cart"><a href="#"><img src="images/shop-btn.png" width="26" height="22" ></a></li>
                             <li class="book"><a href="#"><span>Book</span><span><img src="images/book-btn.png" width="15" height="17" ></span></a></li>
                         </ul><!--/item-menu -->
@@ -85,27 +85,6 @@
                     </div><!--/ item-content -->
                 </div><!---/item -->
                 <div class="item-bottom load-content">
-                    <div class="info-block" role="tabpanel">
-                    
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Photos</a></li>
-                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Details</a></li>
-                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Services</a></li>
-                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Specialists</a></li>
-                            <li role="presentation"><a href="#reviews" aria-controls="settings" role="tab" data-toggle="tab">Reviews</a></li>
-                        </ul>
-                        
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active" id="home">Photos</div>
-                            <div role="tabpanel" class="tab-pane" id="profile">Details</div>
-                            <div role="tabpanel" class="tab-pane" id="messages">Services</div>
-                            <div role="tabpanel" class="tab-pane" id="settings">.. Specialist ..</div>
-                            <div role="tabpanel" class="tab-pane" id="reviews">.. Reviews ..</div>
-                        </div>
-                    
-                    </div><!--/info-block -->
                 </div><!--/item-item bottom -->
             </div><!--/item-wrapper -->
             
