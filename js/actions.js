@@ -6,6 +6,7 @@ $(document).ready(function(e) {
 
     $(document).on('click','.info a', function(){
  		renderInfo();
+    $( ".load-content" ).show();
 		return false;
 	});//click on info button
 
@@ -13,18 +14,29 @@ $(document).ready(function(e) {
     var objMap = $(this).data();
     var id = objMap.id;
  		renderMap(id);
+    $( ".load-content" ).show();
 		return false;
-	});//click on info button
+	});//click on map button
 
     $(document).on('click','.cart a', function(){
  		renderCart();
+    $( ".load-content" ).show();
 		return false;
-	});//click on info button
+	});//click on cart button
 
     $(document).on('click','.book a', function(){
  		renderBook();
+    $( ".load-content" ).show();
 		return false;
-	});//click on info button
+	});//click on book button
+
+    $(document).on('click','.hide-block', function(){
+      $( ".load-content" ).slideUp('slow',function() {
+        $( ".load-content" ).html('');
+    });
+      //$( ".load-content" ).html('');
+    return false;
+  });//click on hide block button
 
 });
 
@@ -59,6 +71,7 @@ function renderMap(id)
         
      });
 }
+
 
 function renderCart()
 {
