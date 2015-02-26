@@ -6,6 +6,8 @@ $(document).ready(function(e) {
 
     $(document).on('click','.info a', function(){
  		renderInfo();
+    removeActive();
+    $('.info a').addClass("active");
     $( ".load-content" ).show();
 		return false;
 	});//click on info button
@@ -14,25 +16,32 @@ $(document).ready(function(e) {
     var objMap = $(this).data();
     var id = objMap.id;
  		renderMap(id);
+    removeActive();
+    $('.map a').addClass("active");
     $( ".load-content" ).show();
 		return false;
 	});//click on map button
 
     $(document).on('click','.cart a', function(){
  		renderCart();
+    removeActive();
     $( ".load-content" ).show();
+    $('.cart a').addClass("active");
 		return false;
 	});//click on cart button
 
     $(document).on('click','.book a', function(){
  		renderBook();
+    removeActive();
+    $('.book a').addClass("active");
     $( ".load-content" ).show();
 		return false;
 	});//click on book button
 
     $(document).on('click','.hide-block', function(){
-      $( ".load-content" ).slideUp('slow',function() {
+      $( ".load-content" ).slideUp('normal',function() {
         $( ".load-content" ).html('');
+        removeActive();
     });
       //$( ".load-content" ).html('');
     return false;
@@ -48,6 +57,9 @@ events end
 functions
 */
 
+function removeActive(){
+  $('.item-menu li a').removeClass('active');
+}
 function renderInfo()
 {
     var url = '/ajax/Info';

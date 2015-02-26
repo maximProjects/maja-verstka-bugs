@@ -13,7 +13,6 @@
 		<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
 		<!-- site includes -->
-		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.2.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
@@ -64,10 +63,10 @@
                         </div><!--/item-head -->
                         
                         <ul class="item-menu clearfix">
-                            <li class="info"><a href="#"><img src="images/info-btn.png"  width="10" height="24"/></a></li>
-                            <li class="map"><a href="#" data-id="2"><img src="images/map-btn.png" width="17" height="22" ></a></li>
-                            <li class="cart"><a href="#"><img src="images/shop-btn.png" width="26" height="22" ></a></li>
-                            <li class="book"><a href="#"><span>Book</span><span><img src="images/book-btn.png" width="15" height="17" ></span></a></li>
+                            <li class="info"><a href="#"></a></li>
+                            <li class="map"><a href="#"  data-id="2"></a></li>
+                            <li class="cart"><a href="#"></a></li>
+                            <li class="book"><a href="#"><span>Book</span><span class="arrow"></span></a></li>
                         </ul><!--/item-menu -->
                         
                         <a class="fav-item-btn"></a>
@@ -75,6 +74,7 @@
                     </div><!--/ item-content -->
                 </div><!---/item -->
                 <div class="item-bottom load-content">
+
                 </div><!--/item-item bottom -->
             </div><!--/item-wrapper -->
             
@@ -87,6 +87,7 @@
     </div><!--/row -->
 </div><!--/container-fluid -->
 </body>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.2.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/maps.js"></script>
