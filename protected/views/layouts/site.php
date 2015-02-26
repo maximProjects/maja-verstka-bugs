@@ -32,15 +32,15 @@
 -->
 <body>
 <header class="container-fluid">
-	<div class="row">
-    	<div class="col-xs-12">
-        	<a class="pull-left logo" href="/"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/logo.png" width="123" height="39" alt="logo" /></a>
+    <div class="row">
+        <div class="col-xs-12">
+            <a class="pull-left logo" href="/"><img src="images/logo.png" width="123" height="39" alt="logo" /></a>
         </div>
     </div>
 </header>
 
 <div class="container-fluid">
-	<div class="row main-content-wrapper">
+    <div class="row main-content-wrapper">
         <div class="botton-holder clearfix col-xs-12">
             <div class="pull-left top-btns-holder">
                 <a class=" visible-xs" href="#"><span>Filters</span><span><img src="images/settings.png" width="26" height="26" /></span></a>
@@ -48,43 +48,69 @@
             <div class="pull-right top-btns-holder">
                 <a class="visible-xs visible-sm" href="#"><span>Favorites</span><span><img src="images/faforite.png" width="27" height="27" /></span></a>
             </div>
-        </div><!--/botton-holder -->	
+        </div><!--/botton-holder -->    
     
-    	<aside class="col-md-3 col-sm-3 hidden-xs a-left">
+        <aside class="col-md-3 col-sm-3 hidden-xs a-left">
         left
         </aside>
         <section class="col-xs-12 col-md-7 col-sm-9">
-        	<div class="item-wrapper">
-                <div class="item-top" style="background-image:url(<?php echo Yii::app()->request->baseUrl; ?>/images/salon_bg.jpg)" >
+        
+            <div class="item-wrapper">
+                   <div class="item-top" style="background-image:url(images/salon_bg.jpg)" >
+                
                     <div class="item-content">
                         <div class="item-head clearfix">
-                            <h2 class="pull-left">Saloom name</h2>
+                           
+                            <h2 class="pull-left">Saloom name long long long long name</h2>
                             <div class="price pull-right">
-                            	<span>From</span>
+                                <span>From</span>
                                 <span>10&nbsp;&euro;</span>
                             </div><!--/price -->
-                            <div class="rating pull-right">rating</div>
+                            
+                            <div class="rating-holder pull-right">
+                                <span class="rating rating-3"></span>
+                                <span class="visible-xs">3.0</span>
+                            </div><!--/rating -->
                         </div><!--/item-head -->
                         
                         <ul class="item-menu clearfix">
-                            <li class="info"><a href="#"></a></li>
-                            <li class="map"><a href="#"></a></li>
-                            <li class="cart"><a href="#"></a></li>
-                            <li class="book"><a href="#"></a></li>
+                            <li class="info"><a href="#"><img src="images/info-btn.png"  width="10" height="24"/></a></li>
+                            <li class="map"><a href="#" data-id="1"><img src="images/map-btn.png" width="17" height="22" ></a></li>
+                            <li class="cart"><a href="#"><img src="images/shop-btn.png" width="26" height="22" ></a></li>
+                            <li class="book"><a href="#"><span>Book</span><span><img src="images/book-btn.png" width="15" height="17" ></span></a></li>
                         </ul><!--/item-menu -->
+                        
+                        <a class="fav-item-btn"></a>
                         
                     </div><!--/ item-content -->
                 </div><!---/item -->
                 <div class="item-bottom load-content">
-                    <?php
-                    /*
-                    <a href="#" class="button" data-latLng="53.488188,-2.373019">Button</a>
-                    <a href="#" class="button" data-latLng="-34.397, 150.644">Button 2</a>
-                    <div id="map-canvas" style="width:100%;height:200px;"></div>
-                    */
-                    ?>
+                    <div class="info-block" role="tabpanel">
+                    
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Photos</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Details</a></li>
+                            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Services</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Specialists</a></li>
+                            <li role="presentation"><a href="#reviews" aria-controls="settings" role="tab" data-toggle="tab">Reviews</a></li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home">Photos</div>
+                            <div role="tabpanel" class="tab-pane" id="profile">Details</div>
+                            <div role="tabpanel" class="tab-pane" id="messages">Services</div>
+                            <div role="tabpanel" class="tab-pane" id="settings">.. Specialist ..</div>
+                            <div role="tabpanel" class="tab-pane" id="reviews">.. Reviews ..</div>
+                        </div>
+                    
+                    </div><!--/info-block -->
                 </div><!--/item-item bottom -->
             </div><!--/item-wrapper -->
+            
+            
+            
         </section>
         <aside class="col-md-2 hidden-xs hidden-sm a-right">
         right
@@ -92,6 +118,7 @@
     </div><!--/row -->
 </div><!--/container-fluid -->
 </body>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/maps.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/actions.js"></script>

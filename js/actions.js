@@ -10,7 +10,9 @@ $(document).ready(function(e) {
 	});//click on info button
 
     $(document).on('click','.map a', function(){
- 		renderMap();
+    var objMap = $(this).data();
+    var id = objMap.id;
+ 		renderMap(id);
 		return false;
 	});//click on info button
 
@@ -40,9 +42,9 @@ function renderInfo()
     $(".load-content").load(url);
 }
 
-function renderMap()
+function renderMap(id)
 {
-    var link = '/ajax/Map';
+    var link = '/ajax/Map/'+id;
     /*
     $(".load-content").load(url,);
    initialize();
@@ -50,10 +52,10 @@ function renderMap()
      $.ajax({type: "post",url:link}).done(function(data){
        
             obj = jQuery.parseJSON(data);
-            console.log(obj);
+            //console.log(obj);
             $('.load-content').html(obj.html);
-          //  alert(1);
-            initialize(); 
+            var address = obj.address;
+            initialize(address); 
         
      });
 }

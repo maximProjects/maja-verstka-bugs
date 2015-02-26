@@ -38,6 +38,11 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 
+        'saloons_db'=>array(
+            'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/book_saloons.db',
+            'class' => 'CDbConnection'
+        ),
+
 		// uncomment the following to enable URLs in path-format
 		
 		'urlManager'=>array(

@@ -16,14 +16,16 @@ class AjaxController extends Controller
 
 	}
 
-	public function actionMap()
+	public function actionMap($id)
 	{
         if(Yii::app()->request->isAjaxRequest)
         {
+        	$model = Saloons::model()->findByPk($id);
             
             $html = $this->renderPartial('_map',array(),true);
             $json = array();
             $json['html'] = $html;
+            $json['address'] = $model -> address;
             echo json_encode($json);
 
             Yii::app()->end();
