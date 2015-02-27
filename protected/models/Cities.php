@@ -1,22 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "saloons".
+ * This is the model class for table "cities".
  *
- * The followings are the available columns in table 'saloons':
+ * The followings are the available columns in table 'cities':
  * @property integer $id
+ * @property integer $country_id
  * @property string $name
- * @property string $address
- * @property double $rating
+ * @property string $visible
  */
-class Saloons extends CActiveRecord
+class Cities extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'saloons';
+		return 'cities';
 	}
 
 	/**
@@ -27,11 +27,11 @@ class Saloons extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('rating', 'numerical'),
-			array('name, address', 'length', 'max'=>200),
+			array('country_id', 'numerical', 'integerOnly'=>true),
+			array('name, visible', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, address, rating', 'safe', 'on'=>'search'),
+			array('id, country_id, name, visible', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -43,6 +43,8 @@ class Saloons extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'salons' => array(self::HAS_MANY, 'Salons', 'city_id'),
+			'countries' => array(self::BELONGS_TO, 'Countries', 'country_id'),
 		);
 	}
 
@@ -53,9 +55,9 @@ class Saloons extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'country_id' => 'Country',
 			'name' => 'Name',
-			'address' => 'Address',
-			'rating' => 'Rating',
+			'visible' => 'Visible',
 		);
 	}
 
@@ -78,9 +80,9 @@ class Saloons extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('country_id',$this->country_id);
 		$criteria->compare('name',$this->name,true);
-		$criteria->compare('address',$this->address,true);
-		$criteria->compare('rating',$this->rating);
+		$criteria->compare('visible',$this->visible,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -92,14 +94,14 @@ class Saloons extends CActiveRecord
 	 */
 	public function getDbConnection()
 	{
-		return Yii::app()->saloons_db;
+		return Yii::app()->salons_db;
 	}
 
 	/**
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Saloons the static model class
+	 * @return Cities the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

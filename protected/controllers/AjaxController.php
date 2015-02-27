@@ -20,7 +20,7 @@ class AjaxController extends Controller
 	{
         if(Yii::app()->request->isAjaxRequest)
         {
-        	$model = Saloons::model()->findByPk($id);
+        	$model = Salons::model()->findByPk($id);
             
             $html = $this->renderPartial('_map',array(),true);
             $json = array();

@@ -37,8 +37,8 @@ return array(
 			'allowAutoLogin'=>true,
 		),
 
-        'saloons_db'=>array(
-            'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/book_saloons.db',
+        'salons_db'=>array(
+            'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/salons.db',
             'class' => 'CDbConnection'
         ),
 
