@@ -1,6 +1,6 @@
 var geocoder;
 var map;  
-function initialize(address) {
+function initialize(address, id) {
   geocoder = new google.maps.Geocoder();
   var latlng = new google.maps.LatLng(-34.397, 150.644);
   var mapOptions = {
@@ -8,7 +8,7 @@ function initialize(address) {
     center: latlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   }
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  map = new google.maps.Map(document.getElementById('map-canvas-'+id), mapOptions);
   codeAddress(address);
 }
 

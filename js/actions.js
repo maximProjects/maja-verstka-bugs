@@ -5,43 +5,51 @@ events
 $(document).ready(function(e) {
 
     $(document).on('click','.info a', function(){
- 		renderInfo();
-    removeActive();
-    $('.info a').addClass("active");
-    $( ".load-content" ).show();
-		return false;
+        var objMap = $(this).data();
+        var id = objMap.id;
+     	renderInfo(id);
+        removeActive(id);
+        $('#item-'+id+' .info a').addClass("active");
+        $('#item-'+id+' .load-content').show();
+    		return false;
 	});//click on info button
 
     $(document).on('click','.map a', function(){
-    var objMap = $(this).data();
-    var id = objMap.id;
- 		renderMap(id);
-    removeActive();
-    $('.map a').addClass("active");
-    $( ".load-content" ).show();
-		return false;
+        var objMap = $(this).data();
+        var id = objMap.id;
+     	renderMap(id);
+        removeActive(id);
+        $('#item-'+id+' .map a').addClass("active");
+        $('#item-'+id+' .load-content').show();
+    	return false;
 	});//click on map button
 
     $(document).on('click','.cart a', function(){
- 		renderCart();
-    removeActive();
-    $( ".load-content" ).show();
-    $('.cart a').addClass("active");
-		return false;
+        var objMap = $(this).data();
+        var id = objMap.id;
+     	renderCart(id);
+        removeActive(id);
+        $('#item-'+id+' .cart a').addClass("active");
+        $('#item-'+id+' .load-content').show();
+    	return false;
 	});//click on cart button
 
     $(document).on('click','.book a', function(){
- 		renderBook();
-    removeActive();
-    $('.book a').addClass("active");
-    $( ".load-content" ).show();
-		return false;
+        var objMap = $(this).data();
+        var id = objMap.id;
+     	renderBook(id);
+        removeActive(id);
+        $('#item-'+id+' .book a').addClass("active");
+        $('#item-'+id+' .load-content').show();
+    		return false;
 	});//click on book button
 
     $(document).on('click','.hide-block', function(){
-      $( ".load-content" ).slideUp('normal',function() {
-        $( ".load-content" ).html('');
-        removeActive();
+        var objMap = $(this).data();
+        var id = objMap.id;
+        $( "#item-"+id+" .load-content" ).slideUp('normal',function() {
+            $( "#item-"+id+" .load-content" ).html('');
+            removeActive(id);
     });
       //$( ".load-content" ).html('');
     return false;
@@ -57,13 +65,13 @@ events end
 functions
 */
 
-function removeActive(){
-  $('.item-menu li a').removeClass('active');
+function removeActive(id){
+  $('#item-'+id+' .item-menu li a').removeClass('active');
 }
-function renderInfo()
+function renderInfo(id)
 {
     var url = '/ajax/Info';
-    $(".load-content").load(url);
+    $('#item-'+id+' .load-content' ).load(url);
 }
 
 function renderMap(id)
@@ -77,22 +85,22 @@ function renderMap(id)
        
             obj = jQuery.parseJSON(data);
             //console.log(obj);
-            $('.load-content').html(obj.html);
+            $("#item-"+id+" .load-content").html(obj.html);
             var address = obj.address;
-            initialize(address); 
+            initialize(address,id); 
         
      });
 }
 
 
-function renderCart()
+function renderCart(id)
 {
     var url = '/ajax/Cart';
-    $(".load-content").load(url);
+    $('#item-'+id+' .load-content' ).load(url);
 }
 
-function renderBook()
+function renderBook(id)
 {
     var url = '/ajax/Book';
-    $(".load-content").load(url);
+    $('#item-'+id+' .load-content' ).load(url);
 }

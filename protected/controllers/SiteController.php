@@ -34,6 +34,24 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 
+	public function actionSearch()
+	{
+		$name = $_POST['search-val'];
+		$match = addcslashes($name, '%_');
+		$q = new CDbCriteria( array(
+		    'condition' => "name LIKE :name",  
+		    'params'    => array(':name' => "%$name%") 
+		) );
+		 
+		$cities = Cities::model()->find( $q );
+		$city_id = $cities -> id;
+
+		$salons = Salons::model()->findAll('city_id = :city_id', array(':city_id'=>$city_id));
+
+		$this->render('list', array('model'=>$salons));
+	}
+
+
 	public function actionList()
 	{
 		// renders the view file 'protected/views/site/index.php'
@@ -115,4 +133,6 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+
 }

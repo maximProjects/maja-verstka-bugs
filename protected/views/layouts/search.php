@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/home.css">
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui.min.css" />
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -28,9 +29,9 @@
                         </div>
                     </div>
                     
-                    <form class="clearfix" method="post" action="/">
-                    	<input type="text">
-                        <button type="submit" class="clearfix"><span class="hidden-xs">Search</span><span><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/book-btn.png" width="15" height="17" ></span></button> 
+                    <form id="search-form" class="clearfix" method="post" action="site/Search">
+                    	<input id="salon-search" name="search-val" type="text">
+                        <button type="submit" class="do-search" class="clearfix"><span class="hidden-xs">Search</span><span><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/book-btn.png" width="15" height="17" ></span></button> 
                     </form>
                     <p>Please enter city, service, salon or stylist name</p>
                 </div>
@@ -182,4 +183,7 @@
         </div>
     </footer>
 </body>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.2.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui/jquery-ui.min.js"></script>
+<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/search.js"></script>
 </html>

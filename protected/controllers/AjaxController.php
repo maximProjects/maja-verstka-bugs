@@ -22,12 +22,11 @@ class AjaxController extends Controller
         {
         	$model = Salons::model()->findByPk($id);
             
-            $html = $this->renderPartial('_map',array(),true);
+            $html = $this->renderPartial('_map',array('id'=>$id),true);
             $json = array();
             $json['html'] = $html;
             $json['address'] = $model -> address;
             echo json_encode($json);
-
             Yii::app()->end();
         }
         else
@@ -51,6 +50,25 @@ class AjaxController extends Controller
 
 	}
 
+	public function actionSearch()
+	{
+		$name = $_POST['name_startsWith'];
+		$match = addcslashes($name, '%_');
+		$q = new CDbCriteria( array(
+		    'condition' => "name LIKE :name",  
+		    'params'    => array(':name' => "%$name%") 
+		) );
+		 
+		$citiesArr = Cities::model()->findAll( $q );
+		$result = array();
+		foreach($citiesArr as $item)
+		{
+			$result[] = $item->name;
+		}
+		echo json_encode($result);
+
+	}
+
 	public function actionBook()
 	{
         if(Yii::app()->request->isAjaxRequest)
@@ -63,6 +81,23 @@ class AjaxController extends Controller
             throw new CHttpException(404);
         }
 
+	}
+
+	public function actionCheckSearch(){
+		$name = $_POST['val'];
+		$match = addcslashes($name, '%_');
+		$q = new CDbCriteria( array(
+		    'condition' => "name LIKE :name",  
+		    'params'    => array(':name' => "%$name%") 
+		) );
+		 
+		$cities = Cities::model()->find( $q );
+		$city_id = $cities -> id;
+
+		$salons = Salons::model()->count('city_id = :city_id', array(':city_id'=>$city_id));		
+
+		$result = array('count'=>$salons);
+		echo json_encode($result);
 	}
 	/*
 	public function actionIndex()
