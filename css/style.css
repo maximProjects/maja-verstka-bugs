@@ -20,15 +20,101 @@ h1, h2, h3, h4, h5 {
 /*--------- header --------*/
 
 header {
+	z-index:99;
+	position:fixed;
+	top:0;
+	width:100%;
 	background-color:#49154a;
-	height:88px;}
+	height:114px;}
+	
+header > .row {
+	height:100%;
+	position:relative;}
+	
+header > .row > div {
+	padding-left:0;
+	padding-right:0;}
+	
+.inputs-holder {
+	position:absolute;
+	bottom:30px;}	
 	
 .logo {
-	margin-top:25px;}	
+	display:block;}
+
+.logo-holder > a > img {
+	max-width:100%;}
 	
+.icons-holder {
+	display:table;
+	float:right;}	
+	
+.icons-holder > div {
+	display:table-cell;}	
+	
+.icons-holder > div > a{
+	float:right;
+	position:relative;
+	display:block;
+	height:26px;
+	width:26px;}
+	
+.icons-holder > div > a > .badge {
+	font-size:0.563em;
+	background-color:#e7307d;
+	position:absolute;
+	bottom:-3px;
+	right:-5px;}
+	
+.icons-holder > div > a:hover{
+	background-position:center bottom;}
+	
+	
+.hd-lng {
+	background:url(../images/russian_lng.png) center center no-repeat;}
+	
+.hd-cart {
+	background:url(../images/head-cart-btn-bg.png) center top no-repeat;}
+	
+.hd-help {
+	background:url(../images/head-help-btn-bg.png) center top no-repeat;}
+	
+.hd-tast {
+	background:url(../images/task-btn-holder.png) center top no-repeat;}
+	
+.hd-fav {
+	background:url(../images/head-fav-btn-bg.png) center top no-repeat;}	
+	
+.hd-sheld{
+	background:url(../images/head-sheald-btn-bg.png) center top no-repeat;}
+	
+.hd-login{
+	background:url(../images/head-login-btn-bg.png) center top no-repeat;}
+	
+.inputs-holder > div {
+	top:0;
+	position:absolute;}
+	
+.inputs-holder > div > input {
+	background-color:transparent;}
+	
+.search-input-holder {
+	background-color:#79CFA5;}
+	
+.time-input-holder {
+	left:30px;
+	background-color:#70A4C5;}
+	
+.search-input-holder {
+	left:50px;
+	background-color:#E0B5B6;}		
+								
 /*-------- end header ------*/
 
 /*---- main section ---------*/
+#main-wrapper {
+	padding-top:114px;}
+
 .main-content-wrapper > * {
 	padding-left:0;
 	padding-right:0;}
@@ -289,19 +375,41 @@ a.fav-item-btn:hover {
 	background:url(../images/review-bg.png) center bottom no-repeat ;}
 	
 	
-.info-block {
+.info-block .tab-content > div {
 	min-height:200px;
 	position:relative;
-	padding-bottom:50px;}		
+	padding-bottom:50px;}
 	
-.info-block .close-page {
-	display:block;
-	width:45px;
-	height:45px;
+.info-block .buttom-links {
 	position:absolute;
 	bottom:0;
-	right:0;
-	background:#aaa url( ../images/arrow-up-btn-bg.png) center center no-repeat;}	
+	width:100%;}
+	
+.info-block .buttom-links > a {
+	display:block;
+	height:45px; }
+	
+.close-page {
+	width:45px;
+	height:45px;
+	background:#aaa url( ../images/arrow-up-btn-bg.png) center center no-repeat;}
+	
+.write-rewiew {
+	padding-left:10px;
+	margin-right:10px;
+	color:white;
+	background-color: #e7307d;}
+	
+.write-rewiew:hover {
+	text-decoration:none;
+	color:white;
+	cursor:pointer;}
+	
+.write-rewiew > span {
+	font-weight:600;
+	font-size:1.188em;
+	height:100%;
+	line-height:45px;}
 			
 	
 	
@@ -317,8 +425,66 @@ aside.a-right {
 	background-color:#5C4915;}
 	
 	
+	
+/*---------- footer ---------*/
+footer {
+	background-color:#f9f9f9;}
+	
+footer > div {
+	padding:40px 25px;}
+	
+footer > div > div {
+	margin-bottom:30px;}
+	
+footer > div > div:last-child {
+	margin-bottom:0;}
+	
+.foot-menu-holder > ul {
+	width:100%;
+	list-style:none;
+	display:table;}
+	
+.foot-menu-holder > ul > li {
+	display:table-cell;
+	text-align:center}
+	
+.foot-menu-holder > ul > li > a {
+	color:#01b1d7;
+	font-weight:300;
+	font-size:0.938em;}
+	
+.foot-menu-holder > ul > li > a:hover {
+	text-decoration:none;}
+	
+.foot-logo-holder {
+	text-align:center;}	
+	
+.copy-holder > p {
+	margin:0;
+	font-size:0.813em;
+	font-weight:300;
+	color:#aaa;
+	text-align:center;}	
+	
+	
 /*--------------  media queries -------------------------*/
 @media (min-width: 471px) {
 	.item-head > h2 {font-size:1.375em; width:68%;}
 	
 } /*-- 471 end --*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width:768px){
+	header {height:88px;}
+	#main-wrapper { padding-top:88px;}
+	.inputs-holder {position:relative; bottom:0;}
+	
+	
+	footer {padding:0}
+	footer > div.row {padding-left:0px; padding-right:0px; padding-top:15px; padding-bottom:0px;}
+	footer > div > .foot-menu-holder {float:right; width:250px; padding-top:10px;}
+	footer > div > .foot-logo-holder {float:left; width:auto;}
+	footer > div > .copy-holder {float:left; width:220px; padding-top:10px;}
+	footer > div > .copy-holder > p {text-align:left;} 
+	
+} /*-- 768 end -- */ 
