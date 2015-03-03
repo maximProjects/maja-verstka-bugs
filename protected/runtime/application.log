@@ -3597,3 +3597,19 @@ REQUEST_URI=/site/Search
 in C:\OpenServer\domains\booking-verstka.local\protected\views\site\list.php (11)
 in C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php (51)
 in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/03 09:46:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/03 09:46:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
