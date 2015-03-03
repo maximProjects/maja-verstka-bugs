@@ -37,11 +37,12 @@ class AjaxController extends Controller
 
 	}
 
-	public function actionCart()
+	public function actionCart($id)
 	{
         if(Yii::app()->request->isAjaxRequest)
         {
-            $this->renderPartial('_cart');
+        	$model = Salons::model()->findByPk($id);
+            $this->renderPartial('_cart', array('model' => $model));
             Yii::app()->end();
         }
         else
@@ -70,11 +71,12 @@ class AjaxController extends Controller
 
 	}
 
-	public function actionBook()
+	public function actionBook($id)
 	{
         if(Yii::app()->request->isAjaxRequest)
         {
-            $this->renderPartial('_book');
+        	$model = Salons::model()->findByPk($id);
+            $this->renderPartial('_book', array('model' => $model));
             Yii::app()->end();
         }
         else

@@ -95,12 +95,12 @@ function renderMap(id)
 
 function renderCart(id)
 {
-    var url = '/ajax/Cart';
+    var url = '/ajax/Cart/'+id;
     $('#item-'+id+' .load-content' ).load(url);
 }
 
 function renderBook(id)
 {
-    var url = '/ajax/Book';
+    var url = '/ajax/Book/'+id;
     $('#item-'+id+' .load-content' ).load(url);
 }

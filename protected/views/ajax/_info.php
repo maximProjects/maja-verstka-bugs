@@ -32,8 +32,18 @@
     <!-- Tab panes -->
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="home-<?php echo $model->id;?>">Photos</div>
-        <div role="tabpanel" class="tab-pane" id="profile-<?php echo $model->id;?>">Details</div>
-        <div role="tabpanel" class="tab-pane" id="messages-<?php echo $model->id;?>">Services</div>
+        <div role="tabpanel" class="tab-pane" id="profile-<?php echo $model->id;?>">
+        <?php echo $model->description;?>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages-<?php echo $model->id;?>">
+        <?php
+            $services = $model -> services;
+            foreach($services as $serv)
+            {
+                echo $serv->name." - ".$serv->price." Euro <br>";
+            }
+        ?>
+        </div>
         <div role="tabpanel" class="tab-pane" id="settings-<?php echo $model->id;?>">
         <?php
             $specs = $model -> specialists;
@@ -50,6 +60,6 @@
     
     
     <div class="hide-box">
-        <a data-id="<?php echo $id; ?>" class="close-page pull-right hide-block" href="#"></a>
+        <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
     </div>
 </div><!--/info-block -->

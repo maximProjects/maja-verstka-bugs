@@ -48,7 +48,7 @@ class Salons extends CActiveRecord
 			'photos' => array(self::HAS_MANY, 'photos', 'salon_id'),
 			'specialists' => array(self::HAS_MANY, 'Specialists', 'salon_id'),
 			'serviceslink'  => array(self::HAS_MANY, 'ServicesLink', 'salon_id'),
-			'services' => array(self::HAS_MANY, 'Services', 'service_id', 'through' => 'ServicesLink'),
+			'services' => array(self::HAS_MANY, 'Services', 'service_id', 'through' => 'serviceslink'),
 		);
 	}
 
