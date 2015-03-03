@@ -29,7 +29,7 @@ class Photos extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('salon_id, order', 'numerical', 'integerOnly'=>true),
-			array('path', 'length', 'max'=>200),
+			array('path', 'path_thumb','length', 'max'=>200),
 			array('visible', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -58,6 +58,7 @@ class Photos extends CActiveRecord
 			'id' => 'ID',
 			'salon_id' => 'Salon',
 			'path' => 'Path',
+			'path_thumb' => 'Path thumb',
 			'order' => 'Order',
 			'visible' => 'Visible',
 		);

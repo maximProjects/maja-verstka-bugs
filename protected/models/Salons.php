@@ -45,7 +45,8 @@ class Salons extends CActiveRecord
 		return array(
 			'user' => array(self::BELONGS_TO, 'Users', 'user_id'),
 			'city' => array(self::BELONGS_TO, 'Cities', 'city_id'),
-			'photos' => array(self::HAS_MANY, 'photos', 'salon_id'),
+			'photos' => array(self::HAS_MANY, 'Photos', 'salon_id'),
+			'reviews' => array(self::HAS_MANY, 'Reviews', 'salon_id'),
 			'specialists' => array(self::HAS_MANY, 'Specialists', 'salon_id'),
 			'serviceslink'  => array(self::HAS_MANY, 'ServicesLink', 'salon_id'),
 			'services' => array(self::HAS_MANY, 'Services', 'service_id', 'through' => 'serviceslink'),
@@ -88,6 +89,8 @@ class Salons extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('address',$this->address,true);
 		$criteria->compare('rating',$this->rating);
+		$criteria->compare('bg_image',$this->bg_image);
+
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

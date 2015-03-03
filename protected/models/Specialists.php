@@ -32,7 +32,7 @@ class Specialists extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('salon_id, type_id', 'numerical', 'integerOnly'=>true),
-			array('name, lastname, email, phone', 'length', 'max'=>200),
+			array('name, avatar, lastname, email, phone', 'length', 'max'=>200),
 			array('visible', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -50,7 +50,7 @@ class Specialists extends CActiveRecord
 		return array(
 			'spectypes' => array(self::BELONGS_TO, 'SpecTypes', 'type_id'),
 			'salons' => array(self::BELONGS_TO, 'Salons', 'salon_id'),
-
+			'photos' => array(self::HAS_MANY, 'PhotoSpecialists', 'spec_id'),
 		);
 	}
 
@@ -64,6 +64,7 @@ class Specialists extends CActiveRecord
 			'salon_id' => 'Salon',
 			'type_id' => 'Type',
 			'name' => 'Name',
+			'avatar' => 'Avatar',
 			'lastname' => 'Lastname',
 			'email' => 'Email',
 			'phone' => 'Phone',

@@ -41,6 +41,9 @@
             foreach($services as $serv)
             {
                 echo $serv->name." - ".$serv->price." Euro <br>";
+                echo $serv->servtypes->name."<br>";
+                echo "<img src=\"".Yii::app()->request->baseUrl."/".$serv->servtypes->bg_image."\" style=\"background-color:#e1e1e1;\">";
+                echo "<hr>";
             }
         ?>
         </div>

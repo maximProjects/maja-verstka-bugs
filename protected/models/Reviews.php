@@ -1,23 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "services".
+ * This is the model class for table "reviews".
  *
- * The followings are the available columns in table 'services':
+ * The followings are the available columns in table 'reviews':
  * @property integer $id
- * @property string $name
- * @property string $description
- * @property double $price
- * @property string $visible
+ * @property integer $salon_id
+ * @property string $content
+ * @property integer $rating
+ * @property integer $visible
  */
-class Services extends CActiveRecord
+class Reviews extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'services';
+		return 'reviews';
 	}
 
 	/**
@@ -28,12 +28,11 @@ class Services extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('price', 'numerical'),
-			array('name', 'length', 'max'=>200),
-			array('description, visible', 'safe'),
+			array('salon_id, rating, visible', 'numerical', 'integerOnly'=>true),
+			array('content', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, description, price, visible', 'safe', 'on'=>'search'),
+			array('id, salon_id, content, rating, visible', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -45,8 +44,7 @@ class Services extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'serviceslink'  => array(self::HAS_MANY, 'ServicesLink', 'service_id'),
-			'servtypes' => array(self::BELONGS_TO, 'ServTypes', 'type_id'),
+			'salons' => array(self::BELONGS_TO, 'Salons', 'salon_id'),
 		);
 	}
 
@@ -57,9 +55,9 @@ class Services extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'description' => 'Description',
-			'price' => 'Price',
+			'salon_id' => 'Salon',
+			'content' => 'Content',
+			'rating' => 'Rating',
 			'visible' => 'Visible',
 		);
 	}
@@ -83,10 +81,10 @@ class Services extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('description',$this->description,true);
-		$criteria->compare('price',$this->price);
-		$criteria->compare('visible',$this->visible,true);
+		$criteria->compare('salon_id',$this->salon_id);
+		$criteria->compare('content',$this->content,true);
+		$criteria->compare('rating',$this->rating);
+		$criteria->compare('visible',$this->visible);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -105,7 +103,7 @@ class Services extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Services the static model class
+	 * @return Reviews the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
