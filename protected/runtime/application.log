@@ -3613,3 +3613,299 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/03/03 09:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/test
+---
+2015/03/03 10:23:33 [error] [exception.CException] exception 'CException' with message 'Property "Salons." is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(11): CActiveRecord->__get('')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:23:37 [error] [exception.CException] exception 'CException' with message 'Property "Salons." is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(11): CActiveRecord->__get('')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:23:38 [error] [exception.CException] exception 'CException' with message 'Property "Salons." is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(11): CActiveRecord->__get('')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:23:39 [error] [exception.CException] exception 'CException' with message 'Property "Salons." is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(11): CActiveRecord->__get('')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:31:39 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:31:40 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:31:42 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:31:43 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:31:47 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:31:48 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:31:50 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:33:03 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---
+2015/03/03 10:33:04 [error] [exception.CException] exception 'CException' with message 'Property "SpecTypes.lastname" is not defined.' in C:\OpenServer\domains\booking-verstka.local\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(145): CComponent->__get('lastname')
+#1 C:\OpenServer\domains\booking-verstka.local\protected\views\ajax\_info.php(41): CActiveRecord->__get('lastname')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(869): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(10): CController->renderPartial('_info', Array)
+#6 [internal function]: AjaxController->actionInfo('1')
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(AjaxController), Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(AjaxController), Object(ReflectionMethod), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Info')
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Info')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/ajax/Info/1
+HTTP_REFERER=http://booking-verstka.local/site/Search
+---

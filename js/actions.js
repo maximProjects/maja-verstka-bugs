@@ -70,7 +70,7 @@ function removeActive(id){
 }
 function renderInfo(id)
 {
-    var url = '/ajax/Info';
+    var url = '/ajax/Info/'+id;
     $('#item-'+id+' .load-content' ).load(url);
 }
 

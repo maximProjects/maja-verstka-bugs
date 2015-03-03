@@ -28,7 +28,7 @@ class Salons extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('rating', 'numerical'),
-			array('name, address', 'length', 'max'=>200),
+			array('name, address', 'length', 'bg_image', 'max'=>200),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, name, address, rating', 'safe', 'on'=>'search'),
@@ -62,6 +62,7 @@ class Salons extends CActiveRecord
 			'name' => 'Name',
 			'address' => 'Address',
 			'rating' => 'Rating',
+			'bg_image' => 'Background Image',
 		);
 	}
 

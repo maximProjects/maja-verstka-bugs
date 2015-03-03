@@ -2,11 +2,12 @@
 
 class AjaxController extends Controller
 {
-	public function actionInfo()
+	public function actionInfo($id)
 	{
         if(Yii::app()->request->isAjaxRequest)
         {
-            $this->renderPartial('_info');
+        	$model = Salons::model()->findByPk($id);
+            $this->renderPartial('_info', array('model' => $model));
             Yii::app()->end();
         }
         else

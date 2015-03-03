@@ -11,7 +11,7 @@ foreach($model as $salon)
 */
 ?>
 	<div id="item-<?php echo $salon->id;?>" class="item-wrapper">
-		<div class="item-top" style="background-image:url(<?php echo Yii::app()->request->baseUrl; ?>/images/salon_bg.jpg)" >
+		<div class="item-top" style="background-image:url(<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $salon ->bg_image; ?>)" >
 			<div class="item-content">
 			    <div class="item-head clearfix">
 			       
