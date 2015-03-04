@@ -31,7 +31,20 @@
     
     <!-- Tab panes -->
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="home-<?php echo $model->id;?>">Photos</div>
+        <div role="tabpanel" class="tab-pane active" id="home-<?php echo $model->id;?>">
+            <div class="photos-holder clearfix">
+                <?php foreach($model->photos as $photo): ?>
+                      
+                <div class="col-md-4 photo-block">               
+                    <img src="/<?php echo $photo->path_thumb; ?>">
+                </div>
+            
+                <?php endforeach; ?>
+            </div><!-- photos holder -->
+        
+          
+        </div><!--/tabpanel1 -->
+
         <div role="tabpanel" class="tab-pane" id="profile-<?php echo $model->id;?>">
         <?php echo $model->description;?>
         </div>
