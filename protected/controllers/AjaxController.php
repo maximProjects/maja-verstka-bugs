@@ -102,6 +102,25 @@ class AjaxController extends Controller
 		$result = array('count'=>$salons);
 		echo json_encode($result);
 	}
+
+	public function actionSecialist($id)
+	{
+        if(Yii::app()->request->isAjaxRequest)
+        {
+        	$model = Specialists::model()->findByPk($id);
+            
+            $html = $this->renderPartial('_spec-content',array('model'=>$model),true);
+            $json = array();
+            $json['html'] = $html;
+            echo json_encode($json);
+            Yii::app()->end();
+        }
+        else
+        {
+            throw new CHttpException(404);
+        }
+
+	}
 	/*
 	public function actionIndex()
 	{

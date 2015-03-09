@@ -17,6 +17,13 @@
 .tab-pane {
 	font-family: 'Open Sans', sans-serif;
 }
+
+/* item gallery */
+
+.item-more {
+	display:none;
+}
+
 /* photos tab */
 
 .photos-holder {

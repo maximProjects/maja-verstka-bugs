@@ -33,20 +33,41 @@
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="home-<?php echo $model->id;?>">
             <div class="photos-holder clearfix">
-                <?php foreach($model->photos as $photo): ?>
-                      
-                <div class="photo-block">               
-                    <img src="/<?php echo $photo->path_thumb; ?>">
-                </div>
+                <?php 
+                $i=0;
+                foreach($model->photos as $photo): 
+                    if($i<=2){
+                        $class = "item";
+                    }
+                    else
+                    {
+                        $class = "item-more";
+                    }
+                ?>
+
+                    <div class="photo-block <?php echo $class; ?>">               
+                        <img src="/<?php echo $photo->path_thumb; ?>">
+                    </div>
             
-                <?php endforeach; ?>
+                <?php 
+                    $i++;
+                endforeach; 
+                ?>
             </div><!-- photos holder -->
-        
+            <div class="show-more">
+                <a href="#" class="show-more">Show more...</a>
+            </div>
+            <div class="hide-box">
+                <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
+            </div>        
           
         </div><!--/tabpanel1 -->
 
         <div role="tabpanel" class="tab-pane" id="profile-<?php echo $model->id;?>">
-        <?php echo $model->description;?>
+            <?php echo $model->description;?>
+            <div class="hide-box">
+                <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
+            </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="messages-<?php echo $model->id;?>">
         <?php
@@ -59,23 +80,46 @@
                 echo "<hr>";
             }
         ?>
+        <div class="hide-box">
+            <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
+        </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="settings-<?php echo $model->id;?>">
-        <?php
-            $specs = $model -> specialists;
-            foreach($specs as $spec){
-                echo $spec->name." ".$spec->lastname." - ".$spec->spectypes->name."<br>";
-                echo $spec->phone."<br>";
-                echo "<a href=\"mailto:".$spec->email."\">".$spec->email."</a><br>";
-                echo "<hr><br>";
-            }
-        ?>
+            <div class="spec-holder clearfix">   
+                <?php
+                    $specs = $model -> specialists;
+                    $i=1;
+                    foreach($specs as $spec):
+                        if($spec->avatar){
+                            $img_url = $spec->avatar;
+                        }
+                        else
+                        {
+                            $img_url = "images/man.png"; 
+                        }
+                        
+                ?>
+                        <div class="spec-block" data-id="<?php echo $spec->id; ?>" data-order="<?php echo $i;?>">
+                            <img class="round" src="/<?php echo $img_url;?>">
+                            <div class="spec-title">
+                                <span class="spec-name"><?php echo $spec->name; ?></span><br>
+                                <span class="spec-name"><?php echo $spec->lastname; ?></span><br>
+                                <span class="spec-specialization"><?php echo $spec->spectypes->name;?></span>
+                            </div>
+                            <img class="spec-cont-show" src="/images/tab-show.png">
+                        </div>
+                <?php
+                    $i++;
+                    endforeach;
+                ?>
+            </div>
+            <div class="hide-box">
+                <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
+            </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="reviews-<?php echo $model->id;?>">. </div>
     </div>
     
     
-    <div class="hide-box">
-        <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
-    </div>
+
 </div><!--/info-block -->

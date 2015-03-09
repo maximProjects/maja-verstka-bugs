@@ -18,6 +18,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css">
         <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style_advanced.css">
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.2.min.js"></script>
 	</head>
 <body>
 <header class="container-fluid">
@@ -117,7 +118,6 @@
     </div>
 </footer>
 </body>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.11.2.min.js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.js"></script>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/maps.js"></script>

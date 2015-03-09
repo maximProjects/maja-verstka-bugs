@@ -4,6 +4,13 @@ events
 
 $(document).ready(function(e) {
 
+    $(document).on('click','.show-more', function(){
+
+        $('.item-more').show();
+        $('.show-more').hide();
+        return false;
+    });//click on show-more button
+
     $(document).on('click','.info a', function(){
         var objMap = $(this).data();
         var id = objMap.id;
@@ -77,10 +84,6 @@ function renderInfo(id)
 function renderMap(id)
 {
     var link = '/ajax/Map/'+id;
-    /*
-    $(".load-content").load(url,);
-   initialize();
-   */
      $.ajax({type: "post",url:link}).done(function(data){
        
             obj = jQuery.parseJSON(data);

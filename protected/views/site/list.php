@@ -1,14 +1,8 @@
 <?php
-foreach($model as $salon)
-{
-/*
-	$specs = $salon -> specialists;
-	foreach($specs as $spec){
-		echo $spec->name." | ".$spec->spectypes->name."<br>";
+$cs = Yii::app()->clientScript;
+$cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/specialists-tab.js',CClientScript::POS_END);
+foreach($model as $salon):
 
-
-	}
-*/
 ?>
 	<div id="item-<?php echo $salon->id;?>" class="item-wrapper">
 		<div class="item-top" style="background-image:url(<?php echo Yii::app()->request->baseUrl; ?>/<?php echo $salon ->bg_image; ?>)" >
@@ -43,5 +37,5 @@ foreach($model as $salon)
 		</div><!--/item-item bottom -->
 	</div>
 <?php
-}
+endforeach;
 ?>
