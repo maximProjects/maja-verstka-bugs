@@ -35,7 +35,7 @@
             <div class="photos-holder clearfix">
                 <?php foreach($model->photos as $photo): ?>
                       
-                <div class="col-md-4 photo-block">               
+                <div class="photo-block">               
                     <img src="/<?php echo $photo->path_thumb; ?>">
                 </div>
             
@@ -71,7 +71,7 @@
             }
         ?>
         </div>
-        <div role="tabpanel" class="tab-pane" id="reviews-<?php echo $model->id;?>">.. Reviews ..</div>
+        <div role="tabpanel" class="tab-pane" id="reviews-<?php echo $model->id;?>">. </div>
     </div>
     
     

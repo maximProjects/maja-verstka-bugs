@@ -50,6 +50,7 @@ class Specialists extends CActiveRecord
 		return array(
 			'spectypes' => array(self::BELONGS_TO, 'SpecTypes', 'type_id'),
 			'salons' => array(self::BELONGS_TO, 'Salons', 'salon_id'),
+			'users' => array(self::BELONGS_TO, 'Users', 'user_id'),
 			'photos' => array(self::HAS_MANY, 'PhotoSpecialists', 'spec_id'),
 		);
 	}
@@ -62,6 +63,7 @@ class Specialists extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'salon_id' => 'Salon',
+			'user_id' => 'User',
 			'type_id' => 'Type',
 			'name' => 'Name',
 			'avatar' => 'Avatar',
@@ -93,6 +95,7 @@ class Specialists extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('salon_id',$this->salon_id);
 		$criteria->compare('type_id',$this->type_id);
+		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('lastname',$this->lastname,true);
 		$criteria->compare('email',$this->email,true);
