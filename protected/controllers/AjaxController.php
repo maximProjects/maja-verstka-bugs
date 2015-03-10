@@ -21,8 +21,7 @@ class AjaxController extends Controller
 	{
         if(Yii::app()->request->isAjaxRequest)
         {
-        	$model = Salons::model()->findByPk($id);
-            
+        	$model = Salons::model()->findByPk($id);   
             $html = $this->renderPartial('_map',array('id'=>$id),true);
             $json = array();
             $json['html'] = $html;
@@ -121,6 +120,29 @@ class AjaxController extends Controller
         }
 
 	}
+
+	public function actionServices($id)
+	{
+        if(Yii::app()->request->isAjaxRequest)
+        {
+        	$type_id = $_POST['type_id'];
+        	$sql = "SELECT * from services JOIN services_link WHERE services.id=services_link.service_id AND services.type_id=".$type_id." AND services_link.salon_id=".$id;     
+			$connection=Yii::app()->salons_db;
+			$command=$connection->createCommand($sql);
+			$result=$command->queryAll(); 
+            $html = $this->renderPartial('_serv-content',array('model'=>$result),true);
+            $json = array();
+            $json['html'] = $html;
+            echo json_encode($json);
+            Yii::app()->end();
+        }
+        else
+        {
+            throw new CHttpException(404);
+        }
+
+	}
+
 	/*
 	public function actionIndex()
 	{

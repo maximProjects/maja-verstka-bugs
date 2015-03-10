@@ -70,19 +70,40 @@
             </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="messages-<?php echo $model->id;?>">
-        <?php
-            $services = $model -> services;
-            foreach($services as $serv)
-            {
-                echo $serv->name." - ".$serv->price." Euro <br>";
-                echo $serv->servtypes->name."<br>";
-                echo "<img src=\"".Yii::app()->request->baseUrl."/".$serv->servtypes->bg_image."\" style=\"background-color:#e1e1e1;\">";
-                echo "<hr>";
-            }
-        ?>
-        <div class="hide-box">
-            <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
-        </div>
+            <div class="serv-holder clearfix">
+                <?php
+                    $services = $model -> services;
+                    $types = array();
+                    foreach($services as $serv):
+                        $serv_id = $serv->servtypes->id;
+                        $serv_count=0;
+                        foreach($services as $count):
+                            if($count->servtypes->id == $serv_id):
+                                $serv_count++;
+                            endif;
+                        endforeach;
+                        $types[$serv_id] = array('id'=>$serv_id,'name'=>$serv->servtypes->name,'bg_image'=>$serv->servtypes->bg_image,'count'=>$serv_count);
+                    endforeach;
+                    
+                    $i=1;
+                    foreach ($types as $type):
+                ?>
+                        <div class="serv-block" data-id='<?php echo $model->id;?>' data-type='<?php echo $type['id']?>' data-order='<?php echo $i;?>'>
+                            <img src="/<?php echo $type['bg_image']; ?>">
+                            <div class="serv-title">
+                                <div class="serv-count"><?php echo $type['count'] ?></div>
+                                <div class="serv-name"><?php echo $type['name']; ?></div>
+                            </div>
+                            <img class="tab-serv-show" src="/images/tab-show.png">
+                        </div>
+                <?php    
+                        $i++;                 
+                    endforeach;
+                ?>
+            </div>
+            <div class="hide-box">
+                <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
+            </div>
         </div>
         <div role="tabpanel" class="tab-pane" id="settings-<?php echo $model->id;?>">
             <div class="spec-holder clearfix">   
@@ -117,7 +138,36 @@
                 <a data-id="<?php echo $model->id;?>" class="close-page pull-right hide-block" href="#"></a>
             </div>
         </div>
-        <div role="tabpanel" class="tab-pane" id="reviews-<?php echo $model->id;?>">. </div>
+        <div role="tabpanel" class="tab-pane" id="reviews-<?php echo $model->id;?>">
+            <div class="reviews-holder clearfix">
+            <?php
+                foreach($model->reviews as $rev):
+            ?>
+                    <div class="review-block clearfix">
+                        <div class="rev-author">
+                            <img src="/images/man.png">
+                            <div class="initials">
+                                <?php echo $rev->users->name;?><br>
+                                <?php echo $rev->users->lastname;?>
+                            </div>
+                        </div>
+                        <div class="rev-content">
+                            <div class="rating r<?php echo $rev->rating;?>">
+                            </div>
+                            <div class="initials initials-hidden">
+                                <?php echo $rev->users->name;?> <?php echo $rev->users->lastname;?>
+                            </div>
+                            <p>
+                                <?php echo $rev->content;?>
+                            </p>
+                        </div>
+                    </div>
+            <?php
+                endforeach;
+            ?>
+            </div> <!-- / reviews-holder -->
+
+        </div>
     </div>
     
     

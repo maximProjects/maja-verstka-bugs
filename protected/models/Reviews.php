@@ -45,6 +45,7 @@ class Reviews extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'salons' => array(self::BELONGS_TO, 'Salons', 'salon_id'),
+			'users' => array(self::BELONGS_TO, 'Users', 'user_id'),
 		);
 	}
 

@@ -1,6 +1,7 @@
 <?php
 $cs = Yii::app()->clientScript;
 $cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/specialists-tab.js',CClientScript::POS_END);
+$cs->registerScriptFile(Yii::app()->request->baseUrl.'/js/services-tab.js',CClientScript::POS_END);
 foreach($model as $salon):
 
 ?>
