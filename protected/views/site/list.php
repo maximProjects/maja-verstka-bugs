@@ -13,12 +13,12 @@ foreach($model as $salon):
 			        <h2 class="pull-left"><?php echo $salon->name; ?></h2>
 			        <div class="price pull-right">
 			            <span>From</span>
-			            <span>10&nbsp;&euro;</span>
+			            <span><?php echo $salon->min_price;?>&nbsp;&euro;</span>
 			        </div><!--/price -->
 			        
 			        <div class="rating-holder pull-right">
-			            <span class="rating rating-3"></span>
-			            <span class="visible-xs">3.0</span>
+			            <span class="rating rating-<?php echo round($salon->rating); ?>"></span>
+			            <span class="visible-xs"><?php echo $salon->rating; ?></span>
 			        </div><!--/rating -->
 			    </div><!--/item-head -->
 			    

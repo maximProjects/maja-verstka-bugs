@@ -128,7 +128,7 @@
                 <h4>Find your look on a map</h4>
                 <div class="city-input-holder">
                     <label>City</label>
-                    <input type="text" placeholder="City name" />
+                    <input type="text" id="salon-filter" placeholder="City name" />
                 </div><!--/city-input-holder -->
                 <div class="aria-filters">
                     <label>Area</label>
@@ -162,7 +162,7 @@
             <div class="find-by-name">
                 <h4>Enter name </h4>
                 <p>
-                <input type="text" placeholder="SPA, service or person" />
+                <input type="text" name="name" placeholder="SPA, service or person" />
                 </p>
             </div><!-- /find-by-name -->
             
@@ -170,17 +170,19 @@
                 <h4>Price</h4>
                 
                 <div id="slider-range"></div>
+                <input name="sl-from" type="hidden"/>
+                <input name="sl-to" type="hidden"/>
             </div><!--/find-by-price -->
             
             <div class="find-by-rating">
                  <h4>Rating</h4>
                  <div class="rating-holder clearfix">
                     <div class="stars-holder clearfix">
-                        <a href="#" class="r1" data-rating="1"></a>
-                        <a href="#" class="r2" data-rating="2"></a>
-                        <a href="#" class="r3" data-rating="3"></a>
-                        <a href="#" class="r4" data-rating="4"></a>
-                        <a href="#" class="r5" data-rating="5"></a>
+                        <a href="#" class="r1 rat-link" data-rating="1"></a>
+                        <a href="#" class="r2 rat-link" data-rating="2"></a>
+                        <a href="#" class="r3 rat-link" data-rating="3"></a>
+                        <a href="#" class="r4 rat-link" data-rating="4"></a>
+                        <a href="#" class="r5 rat-link" data-rating="5"></a>
                     </div><!--/stars-holder -->
                     <div class="number-holder">
                     1
