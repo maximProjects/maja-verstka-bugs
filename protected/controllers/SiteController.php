@@ -34,17 +34,9 @@ class SiteController extends Controller
 		$this->render('index');
 	}
 
-	public function actionSearch()
+	public function actionSearch($id)
 	{
-		$name = $_POST['search-val'];
-		$match = addcslashes($name, '%_');
-		$q = new CDbCriteria( array(
-		    'condition' => "name LIKE :name",  
-		    'params'    => array(':name' => "%$name%") 
-		) );
-		 
-		$cities = Cities::model()->find( $q );
-		$city_id = $cities -> id;
+		$city_id = $id;
 
 		$salons = Salons::model()->findAll('city_id = :city_id', array(':city_id'=>$city_id));
 

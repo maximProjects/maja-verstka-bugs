@@ -128,7 +128,8 @@
                 <h4>Find your look on a map</h4>
                 <div class="city-input-holder">
                     <label>City</label>
-                    <input type="text" id="salon-filter" placeholder="City name" />
+                    <input type="text" id="city-filter" placeholder="City name" />
+                    <input type="hidden" value="" name="city-id"/>
                 </div><!--/city-input-holder -->
                 <div class="aria-filters">
                     <label>Area</label>
@@ -162,7 +163,7 @@
             <div class="find-by-name">
                 <h4>Enter name </h4>
                 <p>
-                <input type="text" name="name" placeholder="SPA, service or person" />
+                <input type="text" id="name" name="name" placeholder="SPA, service or person" />
                 </p>
             </div><!-- /find-by-name -->
             
@@ -170,8 +171,8 @@
                 <h4>Price</h4>
                 
                 <div id="slider-range"></div>
-                <input name="sl-from" type="hidden"/>
-                <input name="sl-to" type="hidden"/>
+                <input name="sl-from" value="" type="hidden"/>
+                <input name="sl-to" value="" type="hidden"/>
             </div><!--/find-by-price -->
             
             <div class="find-by-rating">
@@ -188,16 +189,18 @@
                     1
                     </div><!--/number-holdr -->
                  </div><!--/rating-holder -->
+                 <input name="rating" value="" type="hidden"/>
             </div><!--/find-by-rating -->
             
             <div class="find-by-services">
                 <h4>Services</h4>
                 <ul class="srv-type">
-                    <li><a class="srv-skin" href="#">Skin care services </a></li>
-                    <li><a class="srv-hair" href="#">Hair styling services</a></li>
-                    <li><a class="srv-nail" href="#">Nail care services</a></li>
+                    <li><a class="srv-skin serv-link" href="#">Skin care services </a></li>
+                    <li><a class="srv-hair serv-link" href="#">Hair styling services</a></li>
+                    <li><a class="srv-nail serv-link" href="#">Nail care services</a></li>
                 </ul>
-                <a href="#">Show more...</a>                
+                <a href="#">Show more...</a>
+                <input name="serv" type="hidden"/>                
             </div><!--/find-by-srvices -->
             
             <div class="find-by-speciality">

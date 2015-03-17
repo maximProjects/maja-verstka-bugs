@@ -9,33 +9,35 @@ $('#salon-search').autocomplete({
 		   name_startsWith: request.term,
 		},
 		 success: function( data ) { 
-		 	console.log(data);
 			 response( $.map( data, function( item ) {
 				return {
-					label: item,
-					value: item
+					label: item.name,
+					id: item.id
 				}
 			}));
 		}
 		});
 	},
 	select: function( event, ui ) {
-		doSearch(ui.item.value);
+		console.log(ui.item);
+		doSearch(ui.item.id);
 	},
 	autoFocus: true,
 	minLength: 2      	
 });
 
-function doSearch(value)
+function doSearch(id)
 {
-    var link = '/ajax/CheckSearch/';
+    var link = '/ajax/CheckSearch/'+id;
 
-     $.ajax({type: "post",url:link,data:{'val':value}}).done(function(data){
+     $.ajax({type: "post",url:link}).done(function(data){
        
             obj = jQuery.parseJSON(data);
             if(obj.count>0)
             {
-            	$( "#search-form" ).submit();
+
+            	window.location.href="/site/search/"+id;
+
             }
             //console.log(obj);
         

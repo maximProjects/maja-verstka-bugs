@@ -1,3 +1,5 @@
+var price_min = 10;
+var price_max = 200;
 $(document).ready(function(e) {
 	$('#select-distance').selectmenu();
 	
@@ -5,16 +7,31 @@ $(document).ready(function(e) {
 	//Price range 
 		$( "#slider-range" ).slider({
 		range: true,
-		min: 10,
-		max: 200,
+		min: price_min,
+		max: price_max,
 		step: 10,
-		values: [10,200],
+		values: [price_min,price_max],
 		slide: function( event, ui ){
+			/*
 			$('input:hidden[name=sl-from]').val(ui.values[0]);
-			$('input:hidden[name=sl-to]').val(ui.values[1]);	
+			$('input:hidden[name=sl-to]').val(ui.values[1]);
+			*/	
 		},//slde:function 
-		
-	}).slider("pips", { labels: {first:'10 €', last:'200 € + '}}).slider("float", {suffix:' €' });//slider-range
+		change: function( event, ui ) {
+			$('input:hidden[name=sl-from]').val('');
+			$('input:hidden[name=sl-to]').val('');
+			if(ui.values[0]!=price_min)
+			{
+				$('input:hidden[name=sl-from]').val(ui.values[0]);
+			}
+			if(ui.values[1]!=price_max)
+			{
+				$('input:hidden[name=sl-to]').val(ui.values[1]);	
+			}	
+			
+			doFilter();
+		},
+	}).slider("pips", { labels: {first:price_min+' €', last:price_max+' € + '}}).slider("float", {suffix:' €' });//slider-range
 	
 	//stars selector
 	$(".stars-holder ").hover(function(){},
@@ -33,7 +50,7 @@ $(document).ready(function(e) {
 	$(".stars-holder > a").click(function(e) {
 		var rating = $(this).data('rating');
 		$('.number-holder').html(rating);
-		alert(rating);
+		$('input:hidden[name=rating]').val(rating);
 		doFilter();
         return false;
     });
@@ -41,8 +58,12 @@ $(document).ready(function(e) {
 /*
 	add by Maxim
 */
+$(document).on('change','#name', function(){
+	doFilter();
+	return false;
+});
 
-$('#salon-filter').autocomplete({
+$('#city-filter').autocomplete({
 	source: function( request, response ) {
 		$.ajax({
 			url : link,
@@ -63,6 +84,7 @@ $('#salon-filter').autocomplete({
 		});
 	},
 	select: function( event, ui ) {
+		/*$('input:hidden[name=city-id]').val(ui.item.value);*/
 		doFilter();
 	},
 	autoFocus: true,
@@ -86,7 +108,15 @@ function putHover(rating){
 */	
 
 function doFilter(){
-	alert('do filter');
+	var city_id = $('input:hidden[name=city-id]').val();
+	var name = $('input:text[name=name]').val();
+	var rating = $('input:hidden[name=rating]').val();
+	var price_from = $('input:hidden[name=sl-from]').val();
+	var price_to = $('input:hidden[name=sl-to]').val();
+	var params = {name:name,rating:rating,price_from:price_from,price_to:price_to,city_id:city_id};
+
+	console.log(params); 
+	//alert('rating = '+rating+" | price_from - "+price_from+" | price_to"+price_to+" | name = "+name);
 }	
 
 /*

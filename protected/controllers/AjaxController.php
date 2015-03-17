@@ -64,10 +64,20 @@ class AjaxController extends Controller
 		$result = array();
 		foreach($citiesArr as $item)
 		{
-			$result[] = $item->name;
+			$result[] = array('name'=>$item->name,'id'=>$item->id);
 		}
 		echo json_encode($result);
 
+	}
+
+	public function actionCheckSearch($id){
+		
+		$city_id = $id;
+		
+		$salons = Salons::model()->count('city_id = :city_id', array(':city_id'=>$city_id));		
+
+		$result = array('count'=>$salons);
+		echo json_encode($result);
 	}
 
 	public function actionBook($id)
@@ -85,22 +95,7 @@ class AjaxController extends Controller
 
 	}
 
-	public function actionCheckSearch(){
-		$name = $_POST['val'];
-		$match = addcslashes($name, '%_');
-		$q = new CDbCriteria( array(
-		    'condition' => "name LIKE :name",  
-		    'params'    => array(':name' => "%$name%") 
-		) );
-		 
-		$cities = Cities::model()->find( $q );
-		$city_id = $cities -> id;
 
-		$salons = Salons::model()->count('city_id = :city_id', array(':city_id'=>$city_id));		
-
-		$result = array('count'=>$salons);
-		echo json_encode($result);
-	}
 
 	public function actionSecialist($id)
 	{
