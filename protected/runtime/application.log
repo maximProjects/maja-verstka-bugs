@@ -6262,3 +6262,326 @@ Stack trace:
 REQUEST_URI=/site/Search
 HTTP_REFERER=http://booking-verstka.local/
 ---
+2015/03/17 16:03:20 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE name LIKE %:name%
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (101)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/17 16:03:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near "%": syntax error' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':name', 'dn')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(101): CActiveRecord->findAll('name LIKE %:nam...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/17 16:32:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php:336
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Search')
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Search')
+#5 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site/Search
+HTTP_REFERER=http://booking-verstka.local/
+---
+2015/03/17 16:33:32 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE name LIKE :name AND rating => :rating
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (111)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/17 16:33:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 near ">": syntax error' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':name', '%netforms%')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(111): CActiveRecord->findAll('name LIKE :name...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/18 09:35:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/18 09:35:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/18 10:28:32 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE price >= :price_from
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (130)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/18 10:28:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such column: price' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':price_from', '20')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(130): CActiveRecord->findAll('price >= :price...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/18 10:28:38 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE price >= :price_from
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (130)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/18 10:28:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such column: price' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':price_from', '30')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(130): CActiveRecord->findAll('price >= :price...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/18 10:28:38 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE price >= :price_from
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (130)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/18 10:28:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such column: price' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':price_from', '30')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(130): CActiveRecord->findAll('price >= :price...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/18 10:28:40 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE price >= :price_from
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (130)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/18 10:28:40 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such column: price' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':price_from', '70')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(130): CActiveRecord->findAll('price >= :price...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/18 10:28:43 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE price >= :price_from
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (130)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/18 10:28:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such column: price' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':price_from', '50')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(130): CActiveRecord->findAll('price >= :price...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/18 10:28:45 [error] [system.db.CDbCommand] Error in preparing SQL: SELECT * FROM 'salons' 't' WHERE price >= :price_from
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php (130)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/18 10:28:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to prepare the SQL statement: SQLSTATE[HY000]: General error: 1 no such column: price' in C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php:218
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\db\CDbCommand.php(273): CDbCommand->prepare()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(568): CDbCommand->bindValue(':price_from', '60')
+#2 C:\OpenServer\domains\booking-verstka.local\framework\db\schema\CDbCommandBuilder.php(100): CDbCommandBuilder->bindValues(Object(CDbCommand), Array)
+#3 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1355): CDbCommandBuilder->createFindCommand(Object(CDbTableSchema), Object(CDbCriteria))
+#4 C:\OpenServer\domains\booking-verstka.local\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#5 C:\OpenServer\domains\booking-verstka.local\protected\controllers\AjaxController.php(130): CActiveRecord->findAll('price >= :price...', Array)
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(49): AjaxController->actionFilter()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('Filter')
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/Filter')
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/ajax/Filter/
+HTTP_REFERER=http://booking-verstka.local/site/search/1
+---
+2015/03/18 12:03:06 [error] [php] include(RightfilterWidget.php): failed to open stream: No such file or directory (C:\OpenServer\domains\booking-verstka.local\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CWidgetFactory.php(147): spl_autoload_call()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(180): SiteController->createWidget()
+#3 C:\OpenServer\domains\booking-verstka.local\protected\views\layouts\site.php(163): SiteController->widget()
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require()
+#5 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(784): SiteController->renderFile()
+#7 C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php(43): SiteController->render()
+#8 unknown(0): SiteController->actionSearch()
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): SiteController->runAction()
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#14 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): SiteController->run()
+#15 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\OpenServer\domains\booking-verstka.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/search/1
+in C:\OpenServer\domains\booking-verstka.local\protected\views\layouts\site.php (163)
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php (43)
+in C:\OpenServer\domains\booking-verstka.local\index.php (13)
+2015/03/18 16:36:11 [error] [exception.CException] exception 'CException' with message 'LeftfilterWidget cannot find the view "LeftWidget".' in C:\OpenServer\domains\booking-verstka.local\framework\web\widgets\CWidget.php:246
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\protected\widgets\LeftfilterWidget.php(9): CWidget->render('LeftWidget')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(181): LeftfilterWidget->run()
+#2 C:\OpenServer\domains\booking-verstka.local\protected\views\layouts\site.php(127): CBaseController->widget('application.wid...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(784): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#6 C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php(43): CController->render('list', Array)
+#7 [internal function]: SiteController->actionSearch('1')
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('search')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/search')
+#15 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/search/1
+HTTP_REFERER=http://booking-verstka.local/
+---
+2015/03/18 16:36:15 [error] [exception.CException] exception 'CException' with message 'LeftfilterWidget cannot find the view "LeftWidget".' in C:\OpenServer\domains\booking-verstka.local\framework\web\widgets\CWidget.php:246
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\protected\widgets\LeftfilterWidget.php(9): CWidget->render('LeftWidget')
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(181): LeftfilterWidget->run()
+#2 C:\OpenServer\domains\booking-verstka.local\protected\views\layouts\site.php(127): CBaseController->widget('application.wid...')
+#3 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require('C:\\OpenServer\\d...')
+#4 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\OpenServer\\d...', Array, true)
+#5 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(784): CBaseController->renderFile('C:\\OpenServer\\d...', Array, true)
+#6 C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php(43): CController->render('list', Array)
+#7 [internal function]: SiteController->actionSearch('1')
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): CController->run('search')
+#14 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController('site/search')
+#15 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 C:\OpenServer\domains\booking-verstka.local\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/search/1
+HTTP_REFERER=http://booking-verstka.local/
+---
+2015/03/18 16:54:58 [error] [php] Missing argument 1 for LeftfilterWidget::run(), called in C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php on line 181 and defined (C:\OpenServer\domains\booking-verstka.local\protected\widgets\LeftfilterWidget.php:7)
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(784): SiteController->renderFile()
+#3 C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php(43): SiteController->render()
+#4 unknown(0): SiteController->actionSearch()
+#5 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/search/1
+in C:\OpenServer\domains\booking-verstka.local\protected\widgets\LeftfilterWidget.php (7)
+in C:\OpenServer\domains\booking-verstka.local\protected\views\layouts\site.php (127)
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php (43)
+2015/03/18 16:55:43 [error] [php] Missing argument 1 for LeftfilterWidget::run(), called in C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php on line 181 and defined (C:\OpenServer\domains\booking-verstka.local\protected\widgets\LeftfilterWidget.php:7)
+Stack trace:
+#0 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(126): require()
+#1 C:\OpenServer\domains\booking-verstka.local\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#2 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(784): SiteController->renderFile()
+#3 C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php(43): SiteController->render()
+#4 unknown(0): SiteController->actionSearch()
+#5 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\OpenServer\domains\booking-verstka.local\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\OpenServer\domains\booking-verstka.local\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\OpenServer\domains\booking-verstka.local\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\booking-verstka.local\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\booking-verstka.local\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/search/1
+in C:\OpenServer\domains\booking-verstka.local\protected\widgets\LeftfilterWidget.php (7)
+in C:\OpenServer\domains\booking-verstka.local\protected\views\layouts\site.php (127)
+in C:\OpenServer\domains\booking-verstka.local\protected\controllers\SiteController.php (43)

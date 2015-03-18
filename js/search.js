@@ -1,8 +1,7 @@
-var link = '/ajax/Search';
 $('#salon-search').autocomplete({
 	source: function( request, response ) {
 		$.ajax({
-			url : link,
+			url : '/ajax/Search',
 			type: "post",
 			dataType: "json",
 		data: {
@@ -19,7 +18,6 @@ $('#salon-search').autocomplete({
 		});
 	},
 	select: function( event, ui ) {
-		console.log(ui.item);
 		doSearch(ui.item.id);
 	},
 	autoFocus: true,

@@ -62,6 +62,7 @@ class AjaxController extends Controller
 		 
 		$citiesArr = Cities::model()->findAll( $q );
 		$result = array();
+		$result[0] = array('name'=>'All','id'=>0);
 		foreach($citiesArr as $item)
 		{
 			$result[] = array('name'=>$item->name,'id'=>$item->id);
@@ -70,14 +71,87 @@ class AjaxController extends Controller
 
 	}
 
-	public function actionCheckSearch($id){
+	public function actionCheckSearch($id)
+	{
 		
 		$city_id = $id;
-		
+
 		$salons = Salons::model()->count('city_id = :city_id', array(':city_id'=>$city_id));		
 
 		$result = array('count'=>$salons);
 		echo json_encode($result);
+	}
+
+	public function actionFilter()
+	{
+
+		$json = array();
+
+		$params = array();
+		$cond='';
+		if(!empty($_POST['name'])){
+			$params[':name']= "%".$_POST['name']."%";
+			$cond .= 'name LIKE :name';
+		}
+
+		if(!empty($_POST['rating'])){
+			if(!empty($cond)){
+				$cond .=" AND rating >= :rating";
+			}
+			else
+			{
+				$cond .="rating >= :rating";
+			}
+			$params[':rating'] = $_POST['rating'];
+		}
+
+		if(!empty($_POST['price_from'])){
+			if(!empty($cond)){
+				$cond .=" AND min_price >= :price_from";
+			}
+			else
+			{
+				$cond .="min_price >= :price_from";
+			}
+			$params[':price_from'] = $_POST['price_from'];
+		}
+
+		if(!empty($_POST['price_to'])){
+			if(!empty($cond)){
+				$cond .=" AND min_price <= :price_to";
+			}
+			else
+			{
+				$cond .="min_price <= :price_to";
+			}
+			$params[':price_to'] = $_POST['price_to'];
+		}
+
+		if(!empty($_POST['city_id'])){
+			if(!empty($cond)){
+				$cond .=" AND city_id = :city_id";
+			}
+			else
+			{
+				$cond .="city_id = :city_id";
+			}
+			$params[':city_id'] = $_POST['city_id'];
+		}
+
+		if(!empty($_POST['dist_center'])||$_POST['dist_center']==0){
+			if(!empty($cond)){
+				$cond .=" AND dist_center <= :dist_center";
+			}
+			else
+			{
+				$cond .="dist_center <= :dist_center";
+			}
+			$params[':dist_center'] = $_POST['dist_center'];
+		}
+
+		$salons = Salons::model()->findAll($cond, $params);
+		$json['html']=$this->renderPartial('_list', array('params'=>$_POST, 'salons'=>$salons),true);
+		echo json_encode($json);
 	}
 
 	public function actionBook($id)

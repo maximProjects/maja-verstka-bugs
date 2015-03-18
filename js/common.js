@@ -1,9 +1,21 @@
 var price_min = 10;
 var price_max = 200;
 $(document).ready(function(e) {
-	$('#select-distance').selectmenu();
-	
-	
+	$('#select-distance').selectmenu({
+		change: function( event, ui ) 
+				{
+					doFilter();
+				}
+	});
+
+	/*	
+	$(document).on('change','#select-distance', function(){
+		alert('distance');
+		doFilter();
+		return false;
+	});
+	*/	
+
 	//Price range 
 		$( "#slider-range" ).slider({
 		range: true,
@@ -66,7 +78,7 @@ $(document).on('change','#name', function(){
 $('#city-filter').autocomplete({
 	source: function( request, response ) {
 		$.ajax({
-			url : link,
+			url : '/ajax/Search',
 			type: "post",
 			dataType: "json",
 		data: {
@@ -76,15 +88,15 @@ $('#city-filter').autocomplete({
 		 	console.log(data);
 			 response( $.map( data, function( item ) {
 				return {
-					label: item,
-					value: item
+					label: item.name,
+					id: item.id
 				}
 			}));
 		}
 		});
 	},
 	select: function( event, ui ) {
-		/*$('input:hidden[name=city-id]').val(ui.item.value);*/
+		$('input:hidden[name=city-id]').val(ui.item.id);
 		doFilter();
 	},
 	autoFocus: true,
@@ -113,10 +125,21 @@ function doFilter(){
 	var rating = $('input:hidden[name=rating]').val();
 	var price_from = $('input:hidden[name=sl-from]').val();
 	var price_to = $('input:hidden[name=sl-to]').val();
-	var params = {name:name,rating:rating,price_from:price_from,price_to:price_to,city_id:city_id};
+	var dist_center = $('#select-distance').val();
+	var params = {name:name,rating:rating,price_from:price_from,price_to:price_to,city_id:city_id,dist_center:dist_center};
 
 	console.log(params); 
 	//alert('rating = '+rating+" | price_from - "+price_from+" | price_to"+price_to+" | name = "+name);
+    var link = '/ajax/Filter/';
+     $.ajax({type: "post",data:params,url:link}).done(function(data){
+       
+            obj = jQuery.parseJSON(data);
+            //console.log(obj);
+            $("#main-content").html(obj.html);
+        
+     });
+
+	return false;
 }	
 
 /*
